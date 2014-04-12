@@ -1,1 +1,9 @@
-<h2>Hello World</h2>
+<h2>Vagas</h2>
+<a href="/jobs/new">Cadastrar Vaga</a>
+<hr>
+
+{% for job in jobs %}
+    <p>{{ job }}</p>
+    <a href="/jobs/{{ job._id }}/edit">alterar</a>
+    <hr>
+{% endfor %}
