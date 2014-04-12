@@ -3,7 +3,11 @@
 <hr>
 
 {% for job in jobs %}
-    <p>{{ job }}</p>
+    <p>Titulo: {{ job.titulo }}</p>
+    <p>Cargo: {{ job.cargo }}</p>
+    <p>Salario: {{ job.salario }}</p>
+    <p>Descricao: {{ job.descricao }}</p>
     <a href="/jobs/{{ job._id }}/edit">alterar</a>
+    <a href="/jobs/{{ job._id }}/delete">remover</a>
     <hr>
 {% endfor %}

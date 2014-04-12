@@ -1,6 +1,6 @@
 <h2>Atualizar Vaga</h2>
 
-<form action="/jobs/update" method="POST">
+<form action="/jobs/{{ job._id }}/update" method="POST">
     <p>
     <label for="titulo">Título</label>
     <input type="text" name="titulo" value="{{ job.titulo }}">
